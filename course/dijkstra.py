@@ -1,16 +1,44 @@
-from pythonds.graphs import PriorityQueue, Graph, Vertex
+import graph
+import queue
+
 def dijkstra(aGraph, start):
-    pq = PriorityQueue()
-    start.setDistance(0)   #对所有顶点建堆，形成优先队列
-    pq.buildHeap([(v.getDistance(), v) for v in aGraph])
+    pq = queue.PriorityQueue()
+
+    start.setDistance(0)                   #起始点的dist为0
+    #对所有顶点建堆，形成优先队列
+    for v in g:
+        pq.add_task(v, v.getDistance())
     while not pq.isEmpty():
-        currentVert = pq.delMin()          #优先队列出队
-        for nextVert in currentVert.getConnections():
-            newDist = currentVert.getDistance() \
-                    + currentVert.getWeight(nextVert)
-                   #修改出队顶点所邻顶点dist和前驱节点，
-                   #                          并重排队列
-            if newDist < nextVert.getDistance():
-                nextVert.setDistance(newDist)
-                nextVert.setPred(currentVert)
-                pq.decreaseKey(nextVert, newDist)
+        try :
+            curr = pq.pop_task()    #优先队列出队
+        except KeyError:
+            break
+        for nbr in curr.getConnections():
+            newDist = curr.getDistance() \
+                    + curr.getWeight(nbr)
+            if newDist < nbr.getDistance():
+                #更新邻居结点
+                nbr.setDistance(newDist)
+                nbr.setPred(curr)
+                pq.add_task(nbr, newDist)
+
+if __name__ == "__main__":
+    def addEdge(g, u, v, weight):
+        g.addEdge(u, v, weight)
+        g.addEdge(v, u, weight)
+
+    g = graph.Graph(graph.Vertex)
+    addEdge(g, 'u', 'v', 2)
+    addEdge(g, 'w', 'v', 3)
+    addEdge(g, 'u', 'w', 5)
+    addEdge(g, 'u', 'x', 1)
+    addEdge(g, 'x', 'v', 2)
+    addEdge(g, 'x', 'w', 3)
+    addEdge(g, 'y', 'w', 1)
+    addEdge(g, 'y', 'x', 1)
+    addEdge(g, 'y', 'z', 1)
+    addEdge(g, 'w', 'z', 5)
+
+    dijkstra(g, g.getVertex('u'))
+    for v in g:
+        print(f'{v.id} : {v.distance}')
