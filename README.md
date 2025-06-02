@@ -1,6 +1,6 @@
 # 数据结构与算法B
 
-这儿用于讨论谢正茂老师所授班级的课程代码和上机作业。
+谢正茂老师所授的13班在这里进行信息发布和课程讨论。
 ### 课程代码
 
 代码行数多了，没有bug是不可能的。欢迎同学们批判的学习这里的课程代码，发现并解决其中的bug。对于代码可读性和效率的改进，讲出自己的道理，更是非常欢迎的。
@@ -8,19 +8,27 @@
 ### 上机作业
 
 上机作业在openjudge子目录下，目前只收录两个来源的题目：
- - [数据结构与算法(Python语言实现)教材题库](http://dsbpython.openjudge.cn/dspythonbook/)
- - [课程同步作业](https://xzmdsa.openjudge.cn)
+ - [数据结构与算法(Python语言实现)教材题库]( http://dsbpython.openjudge.cn/dspythonbook/ )
+ - [课程同步作业]( http://xzmdsa.openjudge.cn )
 
 前者里面有200道题；后者随课程进度发布，共8次左右作业，每次5-7题。
 
-请阅读该目录下的README文件，本学期针对**先登**荣誉，每登提供0.2分的加分；对**夺旗**荣誉，每旗提供0.8的加分。为了让每个人都有参与的机会，限制每个github账户每天只能发起一次pull_request。
+请阅读该目录下的README文件，本学期针对**先登**荣誉，每登提供0.2分的加分；对**夺旗**荣誉，每旗提供0.8的加分。
+为了让每个人都有参与的机会，限制每个github账户每天（GMT时间）只能发起一次pull_request；
+同时在期末的加分表格中会列出每个人**先登**的题目和对应的时间，每人一天也只能获得一次**先登**加分，超出的加分顺延到本题的下一位提交者，但**夺旗**无此限制。
+
+登录OJ账号之后请加入[数算B谢正茂班]( http://xzmdsa.openjudge.cn ),选择“数算B13班-2025春季”，把在班中的昵称改为“学号+姓名”，这样每次的作业和考试才会有成绩。
+
+上机课时间为每周四5-6节，地点为计算中心7-8号机房
+- 【腾讯文档】[数算B-13班上机座次表]( https://docs.qq.com/sheet/DSnhIcVJDTnVHcER0?tab=txwm2e )
 
 ### Markdown格式
 
-一种很受欢迎的写文档的工具。如果要写一本很“漂亮”的书，那是比不上LaTex的。Markdown可以通过嵌入html来获得一些丰富的格式，但对于在线文档，最简单的格式和功能就足够了。Markdown最大的好处是**简单高效**，高端的食材往往只需要最简单的烹饪方法。
+一种很受欢迎的写文档的工具。如果要写一本很“漂亮”的书，那是比不上LaTex的。Markdown可以通过嵌入html来获得一些丰富的格式，但对于在线文档，最简单的格式和功能就足够了。Markdown最大的好处是**简单高效**，高端的食材往往只需要最简单的烹饪方法。VScode就可以很好的编辑、预览md。
 
 参考：<br>
-[Markdown基本语法](https://www.markdownguide.org/basic-syntax/)
+- [Markdown基本语法]( https://www.markdownguide.org/basic-syntax/ )
+
 ### 如何协作--提交代码并参与讨论
 
 利用github.com的pull request功能，进行线上协作与讨论。
@@ -38,11 +46,41 @@ contributor下次开新的branch的时候，并不需要每次都fork主仓库�
 
 
 参考：<br>
-[How to contribute to open source projects (our community project walkthrough)](https://www.youtube.com/watch?v=dLRA1lffWBw)
+[How to contribute to open source projects (our community project walkthrough)]( https://www.youtube.com/watch?v=dLRA1lffWBw )
 
 #### 国内镜像地址
 
 由于在大陆地区访问github网站连接有不稳定的情况，这里另外提供了一个国内的[镜像](https://gitee.com/patrickxzm/dsa2020)。需要注意的是，该镜像是只读的，前面的协作功能只在github上进行。
 
 这里有一些上网的资源可供利用：[Clash](https://blog.189854.xyz/blog/walless/2023/11/04/clash.html)|[验证PKU邮箱](https://189854.xyz/verify/)
+
+### 课程进度、作业
+
+| 时间  | 课程进度     | 作业                                                     | 备注  |
+| --- | -------- | ------------------------------------------------------ | --- |
+| 第一周 | 引言及概论    | 自学git，熟悉github、OJ功能                                    |     |
+| 第二周 | Python入门 | OJ作业[Python入门](http://xzmdsa.openjudge.cn/2025python/) |     |
+| 第三周 | 算法分析     |                                                        |     |
+| 第四周 | 线性表     |        OJ作业[线性表](http://xzmdsa.openjudge.cn/2025hw2/)       |     |
+| 第五周 | 递归与动规 |        OJ作业[递归与动规](http://xzmdsa.openjudge.cn/2025hw3/)      |        |
+| 第六周 | 递归与动规，KMP |                                                       |        |
+| 第七周 | 排序与查找 |  OJ作业[排序与查找]( http://xzmdsa.openjudge.cn/2025hw4/ )          |        |
+| 第八周 | 排序与查找 |                                                          |        |
+| 第九周 | 树及算法 | OJ作业[树及算法]( http://xzmdsa.openjudge.cn/2025hw5/ )            |        |
+| 第十周 | 期中模拟考试 |                                               |        |
+| 第十一周 | 模拟题讲解，树及算法 |                                         |        |
+| 第十二周 | 五一放假 |                                         |        |
+| 第十三周 | 树及算法，图及算法 | OJ作业[图及算法]( http://xzmdsa.openjudge.cn/2025hw6/ )    |        |
+| 第十四周 | 图及算法 |                             |        |
+| 第十五周 | 图及算法，期末复习指导 |                             |        |
+
+
+###  重要通知
+- 2/25/2025 第三周（3/4/2025）上课时间随堂小测，考察Python基础技能。
+	- 小测地址：http://xzmdsa.openjudge.cn/pythonbasic/
+- 3/25/2025 第七周（4/1/2025）上课时间随堂小测，考察线性表、递归与动规两章
+	- 小测地址：http://xzmdsa.openjudge.cn/2025test2/
+- 4/15/2025 第十周（4/22/2025）上课时间随堂小测，考察排序与查找一章
+- 5/13/2025 第十四周（5/20/2025）上课时间随堂小测，考察树及算法一章
+	- 小测地址：http://xzmdsa.openjudge.cn/2025test4/
 
