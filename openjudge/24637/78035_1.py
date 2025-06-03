@@ -1,3 +1,6 @@
+"""
+无缓存的递归算法，使用单动规递归公式
+"""
 if __name__ == "__main__":
     n = int(input())
     l = list(map(int, input().split()))
